@@ -532,3 +532,6 @@ dataset_citation:
         comment: E.g., a dataset landing page
         description: A URL that gives the location of more complete metadata, such as a dataset landing page. A persistent URL is recommended for this attribute. At MET Norway, landing page urls are https://data.met.no/dataset/, plus the dataset UUID. The nc-to-mmd conversion tool automatically creates the dataset citation url, so the metadata_link is only needed if the information is wanted in the NetCDF file.
   other:
+
+# Adding missing attributes from https://adc.met.no/node/4
+# need to add: Concetions, history, creator_url, featureType, wigos_id
