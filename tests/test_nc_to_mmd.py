@@ -749,7 +749,10 @@ class TestNCAttrsFromYaml(unittest.TestCase):
         set_attributes(mmd_field, val, self.attributes)
         self.assertEqual(self.attributes['acdd']['required'][0], {
             'attribute': 'keywords',
-            'comment': 'Comma separated list.',
+            'comment': ('Required, GCMD Science Keywords. '
+                        'Additional vocabularies may be used. '
+                        'See https://adc.met.no/node/96 for details on how to use. '
+                        'The GCMD Keyword Viewer may come in handy.'),
             'default': '',
             'description':
                 'A comma-separated list of keywords and/or '

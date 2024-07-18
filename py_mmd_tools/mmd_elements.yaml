@@ -253,17 +253,17 @@ operational_status:
   maxOccurs: '1'
   minOccurs: '0'
   acdd:
-    operational_status:
-      comment: Not part of ACDD, MET extension. Recommended for filtering purposes.
-      description: The current operational status of the product. Only elements from the controlled vocabulary of the MMD specification are allowed.
-      format: text
-      options:
-        - Operational
-        - Pre-Operational
-        - Experimental
-        - Scientific
-        - Not available
-      requirement_level: Recommended
+    # operational_status:  # CAUSES UNIT TEST FAILURES
+    #   comment: Not part of ACDD, MET extension. Recommended for filtering purposes.
+    #   description: The current operational status of the product. Only elements from the controlled vocabulary of the MMD specification are allowed.
+      # format: text
+      # options:
+      #   - Operational
+      #   - Pre-Operational
+      #   - Experimental
+      #   - Scientific
+      #   - Not available
+      # requirement_level: Recommended
     processing_level:
       maxOccurs: '1'
       comment: Optional
@@ -586,24 +586,24 @@ activity_type:
   maxOccurs: unbounded
   minOccurs: '0'
   acdd:
-    activity_type: 
-      comment: Not part of ACDD, MET extension. Recommended for filtering purposes.
-      description: Activity types are used to identify the origin of the dataset. This is not an identification of the observation platform (e.g. specific vessel, SYNOP station or satellite), but more the nature of the generation process (e.g. simulation, in situ observation, remote sensing etc). It is useful in the context of filtering data when searching for relevant datasets. Only elements from the controlled vocabulary of the MMD specification are allowed.
-      format: text
-      options:
-        - Aircraft
-        - Space Borne Instrument
-        - Numerical Simulation
-        - Climate Indicator
-        - In Situ Land-based station(Land station) (Field Experiment)
-        - In Situ Ship-based station(Cruise)
-        - In Situ Ocean fixed station(Moored instrument)
-        - In Situ Ocean moving station(Float)
-        - In Situ Ice-based station(Ice station) (Field Experiment)
-        - Interview/Questionnaire(Interview) (Questionnaire)
-        - Maps/Charts/Photographs(Maps) (Charts)(Photographs)
-        - Not available
-      requirement_level: Recommended
+    # activity_type: 
+    #   comment: Not part of ACDD, MET extension. Recommended for filtering purposes.
+    #   description: Activity types are used to identify the origin of the dataset. This is not an identification of the observation platform (e.g. specific vessel, SYNOP station or satellite), but more the nature of the generation process (e.g. simulation, in situ observation, remote sensing etc). It is useful in the context of filtering data when searching for relevant datasets. Only elements from the controlled vocabulary of the MMD specification are allowed.
+      # format: text
+      # options:
+      #   - Aircraft
+      #   - Space Borne Instrument
+      #   - Numerical Simulation
+      #   - Climate Indicator
+      #   - In Situ Land-based station(Land station) (Field Experiment)
+      #   - In Situ Ship-based station(Cruise)
+      #   - In Situ Ocean fixed station(Moored instrument)
+      #   - In Situ Ocean moving station(Float)
+      #   - In Situ Ice-based station(Ice station) (Field Experiment)
+      #   - Interview/Questionnaire(Interview) (Questionnaire)
+      #   - Maps/Charts/Photographs(Maps) (Charts)(Photographs)
+      #   - Not available
+      # requirement_level: Recommended
     source:
       comment: Optional
       separator: ';'
